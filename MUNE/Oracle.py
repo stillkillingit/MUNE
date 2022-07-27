@@ -19,12 +19,15 @@ class Oracle():
 
     # Function for importing number
     def foretell(self, oracles):
-        answer = 'oracle_' + str(oracles)
-        return getattr(self, answer)()
+        #i = 0   #  This will be for when it automatically gives up to 3 answers.
+            #  Max number of Yes, buts or No, buts is 3.
+            #  Stop at Yes or No
+            #  Third iteration is only Yes or No
+        answer1 = 'oracle_' + str(oracles)
 
 # Creating the Oracle object
 delphi = Oracle()
 
 # Verification
-# a = random.randint(1,6)
-# delphi.foretell(a)
+#a = random.randint(1,6)
+#delphi.foretell(a)
